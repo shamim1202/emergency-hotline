@@ -55,7 +55,7 @@
         <div
           class="bg-[#ecfff0] px-7 py-3 rounded-4xl flex items-center justify-center gap-2"
         >
-          <span class="text-xl font-bold pt-1">100</span>
+          <span id="coin" class="text-xl font-bold pt-1">100</span>
           <img
             class="w-7"
             src="./assets/coin.png"
@@ -90,29 +90,38 @@
       <!---------- Main Card Section Div ---------->
       <div class="max-w-[1800px] mx-auto flex gap-8">
         <div class="w-3/4 grid grid-cols-3 gap-7">
-          <!---- card-1 ---->
+          <!---------------- card-1 ----------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
+                id="icon"
                 class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
                 src="./assets/emergency.png"
-                alt="National Emergency icon"
+                alt="National Emergency Service"
                 srcset=""
               />
-              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+              <i
+                id="favourite-icon"
+                class="fa-regular fa-heart text-2xl text-gray-400"
+              ></i>
             </div>
 
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 id="title" class="text-[22px] font-extrabold">
+                জাতীয় জরুরি সেবা
+              </h1>
+              <p id="sub-title" class="text-gray-500">National Emergency</p>
             </div>
 
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
-              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+              <h1 id="service-number" class="text-3xl font-bold">999</h1>
+              <p
+                id="service-tag"
+                class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
+              >
                 সার্বজনীন
               </p>
             </div>
@@ -120,324 +129,340 @@
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-2 ---->
+          <!------------------- card-2 ------------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                id="icon"
+                class="w-16 bg-[#FFE3E2] p-2 rounded-2xl"
+                src="./assets//police.png"
+                alt="Bangladesh Police"
                 srcset=""
               />
-              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+              <i
+                id="favourite-icon"
+                class="fa-regular fa-heart text-2xl text-gray-400"
+              ></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 id="title" class="text-[22px] font-extrabold">পুলিশ</h1>
+              <p id="sub-title" class="text-gray-500">Police</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
-              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+              <h1 id="service-number" class="text-3xl font-bold">999</h1>
+              <p
+                id="service-tag"
+                class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
+              >
+                পুলিশ
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-3 ---->
+          <!------------------ card-3 ------------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                id="icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/fire-service.png"
+                alt="Bangladesh Fire Service"
                 srcset=""
               />
-              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+              <i
+                id="favourite-icon"
+                class="fa-regular fa-heart text-2xl text-gray-400"
+              ></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 id="title" class="text-[22px] font-extrabold">
+                ফায়ার সার্ভিস
+              </h1>
+              <p id="sub-title" class="text-gray-500">Fire Service</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
-              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+              <h1 id="service-number" class="text-3xl font-bold">999</h1>
+              <p
+                id="service-tag"
+                class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
+              >
+                ফায়ার
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-4 ---->
+          <!------------------- card-4 ------------------>
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/ambulance.png"
+                alt="National Ambulance Service"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">অ্যাম্বুলেন্স</h1>
+              <p class="text-gray-500">Ambulance</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">1994-99999</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                স্বাস্থ্য
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-5 ---->
+          <!------------------ card-5 ------------------>
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/women-helpline.png"
+                alt="Women & Child Helpline Service"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">নারী ও শিশু সহায়তা</h1>
+              <p class="text-gray-500">Women & Child Helpline</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">109</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                সহায়তা
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-6 ---->
+          <!----------------- card-6 ------------------>
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/stop-corruption.png"
+                alt="National Corruption Services"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">দুর্নীতি দমন কমিশন</h1>
+              <p class="text-gray-500">Anti-Corruption</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">106</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                সরকারি
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-7 ---->
+          <!----------------- card-7 ----------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/electrical.png"
+                alt="National Electricity Interupt Service"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">বিদ্যুৎ বিভ্রাট</h1>
+              <p class="text-gray-500">Electricity Outage</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">16216</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                বিদ্যুৎ
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-8 ---->
+          <!---------------- card-8 ----------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/brac.png"
+                alt="BRAC NGO Service"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">ব্রাক</h1>
+              <p class="text-gray-500">BRAC</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">16445</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                এনজিও
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
             </div>
           </div>
 
-          <!---- card-9 ---->
+          <!--------------- card-9 ---------------->
           <div class="bg-white p-8 rounded-xl shadow-md">
             <!-- icon -->
             <div class="flex items-center justify-between">
               <img
-                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                src="./assets/emergency.png"
-                alt="National Emergency icon"
+                class="w-16 bg-[#FFE3E2] p-3 rounded-2xl"
+                src="./assets/Bangladesh-Railway.png"
+                alt="Bangladesh Railway Service"
                 srcset=""
               />
               <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
             <!-- Title & Subtitle -->
             <div class="my-5">
-              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
-              <p class="text-gray-500">National Emergency</p>
+              <h1 class="text-[22px] font-extrabold">বাংলাদেশ রেলওয়ে</h1>
+              <p class="text-gray-500">Bangladesh Railway</p>
             </div>
             <!-- Number & Category -->
             <div class="mb-5">
-              <h1 class="text-3xl font-bold">999</h1>
+              <h1 class="text-3xl font-bold">163</h1>
               <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
-                সার্বজনীন
+                পরিবহন
               </p>
             </div>
             <!-- Button -->
             <div class="flex items-center justify-between gap-3">
               <button
-                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+                class="btn-copy w-full border-1 border-gray-300 px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-3"></i>Copy
               </button>
               <button
-                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+                class="btn-call w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl cursor-pointer"
               >
                 <i class="fa-solid fa-phone mr-3"></i>Call
               </button>
@@ -446,7 +471,7 @@
         </div>
 
         <!---------- Call History Div ---------->
-        <div class="w-1/4 bg-white p-8 rounded-xl shadow-md">
+        <div id="history" class="w-1/4 bg-white p-8 rounded-xl shadow-md">
           <!-- call history header -->
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -456,12 +481,13 @@
               <h1 class="text-2xl font-semibold">Call History</h1>
             </div>
             <button
-              class="bg-[#00A63E] text-white text-xl font-medium px-10 py-5 rounded-4xl"
+              id="btn-clear"
+              class="bg-[#00A63E] text-white text-xl font-medium px-10 py-5 rounded-4xl cursor-pointer"
             >
               Clear
             </button>
           </div>
-          <div
+          <!-- <div
             class="bg-[#f5fff6] flex items-center justify-between my-5 px-3 py-4 rounded-xl"
           >
             <div>
@@ -471,12 +497,12 @@
             <div>
               <p>11:36:58 PM</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
 
     <!-------------- *** JavaScript Script File Linked *** ------------>
-    <script src="./main.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
