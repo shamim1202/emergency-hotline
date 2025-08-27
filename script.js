@@ -1,6 +1,7 @@
+/*-----------------> *** All Card Call Button Code *** <---------------*/
 const callBtns = document.getElementsByClassName("btn-call");
 for (const callBtn of callBtns) {
-  callBtn.addEventListener("click", (e) => {
+  callBtn.addEventListener("click", () => {
     const title =
       callBtn.parentNode.parentNode.children[1].children[0].innerText;
 
@@ -15,9 +16,9 @@ for (const callBtn of callBtns) {
     if (currentCoin < 0) {
       return alert("Don't Have Sufficient Coin!");
     } else {
-      const callHistoryDiv = document.getElementById("history");
+      const callHistoryDiv = document.getElementById("history-list");
       const div = document.createElement("div");
-      div.innerHTML = `<div class="bg-[#f5fff6] flex items-center justify-between my-5 px-3 py-4 rounded-xl">
+      div.innerHTML = `<div class="call-log bg-[#f5fff6] flex items-center justify-between my-5 px-3 py-4 rounded-xl">
             <div>
               <p>${title}</p>
               <p>${number}</p>
@@ -31,3 +32,11 @@ for (const callBtn of callBtns) {
     }
   });
 }
+
+/*-----------------> *** History Clear Function *** <---------------*/
+document.getElementById("btn-clear").addEventListener("click", () => {
+  const callHistoryDiv = document.getElementById("history-list");
+  callHistoryDiv.innerHTML = "";
+});
+
+const favouriteBtn = document.getElementsByClassName("fav-btn");
