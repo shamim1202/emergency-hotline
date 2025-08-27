@@ -1,515 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>জরুরি সেবা ডিরেক্টরি</title>
-        <link rel="stylesheet" href="./style.css" />
-        <!------ Fav Icon ----->
-        <link
-            rel="shortcut icon"
-            href="./assets/logo.png"
-            type="image/x-icon"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>জরুরি সেবা ডিরেক্টরি</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!------ Fav Icon ----->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!------ Font Awesome CDN ----->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!------ Tailwind CSS ------>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!------ Google Font ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins box-border">
+    <!-------------------- *** Navigation Bar *** -------------------->
+    <nav class="max-w-[1800px] mx-auto py-8 flex items-center justify-between">
+      <div class="flex items-center justify-between gap-4">
+        <img
+          class="w-14"
+          src="./assets/logo.png"
+          alt="জরুরি সেবা লোগো"
+          srcset=""
         />
-        <!------ Font Awesome CDN ----->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!------ Tailwind CSS ------>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <!------ Google Font ------>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body class="font-poppins box-border">
-        <!-------------------- *** Navigation Bar *** -------------------->
-        <nav
-            class="max-w-[1800px] mx-auto py-8 flex items-center justify-between"
+        <h1 class="text-2xl font-extrabold text-[#006747]">
+          Emergency <br />
+          Service
+        </h1>
+      </div>
+      <div class="grid grid-cols-3 items-center gap-4">
+        <div
+          class="bg-[#ecfff0] px-7 py-3 rounded-4xl flex items-center justify-center gap-2"
         >
-            <div class="flex items-center justify-between gap-4">
-                <img
-                    class="w-14"
-                    src="./assets/logo.png"
-                    alt="জরুরি সেবা লোগো"
-                    srcset=""
-                />
-                <h1 class="text-2xl font-extrabold text-[#006747]">
-                    Emergency <br />
-                    Service
-                </h1>
-            </div>
-            <div class="grid grid-cols-3 items-center gap-4">
-                <div
-                    class="bg-[#ecfff0] px-7 py-3 rounded-4xl flex items-center justify-center gap-2"
-                >
-                    <span class="text-xl font-bold">0</span>
-                    <img
-                        class="w-8"
-                        src="./assets/heart.png"
-                        alt="Useable Coins"
-                        srcset=""
-                    />
-                </div>
-                <div
-                    class="bg-[#ecfff0] px-7 py-3 rounded-4xl flex items-center justify-center gap-2"
-                >
-                    <span class="text-xl font-bold pt-1">100</span>
-                    <img
-                        class="w-7"
-                        src="./assets/coin.png"
-                        alt="Useable Coins"
-                        srcset=""
-                    />
-                </div>
-                <div
-                    class="bg-[#00A63E] text-white px-7 py-3 rounded-4xl text-lg font-medium"
-                >
-                    <p><span>0</span> Copy</p>
-                </div>
-            </div>
-        </nav>
-
-        <!-------------------- *** Banner Section *** ------------------>
-        <section
-            class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center text-center py-8"
+          <span class="text-xl font-bold">0</span>
+          <img
+            class="w-8"
+            src="./assets/heart.png"
+            alt="Useable Coins"
+            srcset=""
+          />
+        </div>
+        <div
+          class="bg-[#ecfff0] px-7 py-3 rounded-4xl flex items-center justify-center gap-2"
         >
-            <img class="w-28" src="./assets/logo-dark.png" alt="" srcset="" />
-            <h1 class="text-4xl font-extrabold text-white my-6">
-                জরুরি সেবা ডিরেক্টরি
-            </h1>
-            <p class="text-xl text-white">
-                Government Emergency Services at Your Fingertip – A Project by
-                Government of the People’s Republic of Bangladesh
-            </p>
-        </section>
+          <span class="text-xl font-bold pt-1">100</span>
+          <img
+            class="w-7"
+            src="./assets/coin.png"
+            alt="Useable Coins"
+            srcset=""
+          />
+        </div>
+        <div
+          class="bg-[#00A63E] text-white px-7 py-3 rounded-4xl text-lg font-medium"
+        >
+          <p><span>0</span> Copy</p>
+        </div>
+      </div>
+    </nav>
 
-        <!-------------------- *** Main Section *** ------------------>
-        <main class="bg-[#f5fff6] py-16">
-            <!---------- Main Card Section Div ---------->
-            <div class="max-w-[1800px] mx-auto flex gap-8">
-                <div class="w-3/4 grid grid-cols-3 gap-7">
-                    <!---- card-1 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
+    <!-------------------- *** Banner Section *** ------------------>
+    <section
+      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center text-center py-8"
+    >
+      <img class="w-28" src="./assets/logo-dark.png" alt="" srcset="" />
+      <h1 class="text-4xl font-extrabold text-white my-6">
+        জরুরি সেবা ডিরেক্টরি
+      </h1>
+      <p class="text-xl text-white">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
 
-                    <!---- card-2 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-3 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-4 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-5 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-6 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-7 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-8 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-
-                    <!---- card-9 ---->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <!-- icon -->
-                        <div class="flex items-center justify-between">
-                            <img
-                                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
-                                src="./assets/emergency.png"
-                                alt="National Emergency icon"
-                                srcset=""
-                            />
-                            <i
-                                class="fa-regular fa-heart text-2xl text-gray-400"
-                            ></i>
-                        </div>
-                        <!-- Title & Subtitle -->
-                        <div class="mb-5">
-                            <h1 class="text-[22px] font-extrabold">
-                                জাতীয় জরুরি সেবা
-                            </h1>
-                            <p class="text-gray-500">National Emergency</p>
-                        </div>
-                        <!-- Number & Category -->
-                        <div class="mb-5">
-                            <h1 class="text-3xl font-bold">999</h1>
-                            <p
-                                class="text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl"
-                            >
-                                সার্বজনীন
-                            </p>
-                        </div>
-                        <!-- Button -->
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="border-1 border-gray-300 px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-regular fa-copy mr-3"></i>Copy
-                            </button>
-                            <button
-                                class="bg-[#00A63E] text-white px-10 py-3 rounded-xl"
-                            >
-                                <i class="fa-solid fa-phone mr-3"></i>Call
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!---------- Call History Div ---------->
-                <div class="w-1/4 bg-white p-8 rounded-xl shadow-md">
-                    <h1 class="text-2xl font-bold">Call History</h1>
-                </div>
+    <!-------------------- *** Main Section *** ------------------>
+    <main class="bg-[#f5fff6] py-16">
+      <!---------- Main Card Section Div ---------->
+      <div class="max-w-[1800px] mx-auto flex gap-8">
+        <div class="w-3/4 grid grid-cols-3 gap-7">
+          <!---- card-1 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
             </div>
-        </main>
 
-        <!-------------- *** JavaScript Script File Linked *** ------------>
-        <script src="./main.js"></script>
-    </body>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-2 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-3 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-4 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-5 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-6 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-7 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-8 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+
+          <!---- card-9 ---->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <!-- icon -->
+            <div class="flex items-center justify-between">
+              <img
+                class="w-16 bg-[#FFE3E2] p-4 rounded-2xl"
+                src="./assets/emergency.png"
+                alt="National Emergency icon"
+                srcset=""
+              />
+              <i class="fa-regular fa-heart text-2xl text-gray-400"></i>
+            </div>
+            <!-- Title & Subtitle -->
+            <div class="my-5">
+              <h1 class="text-[22px] font-extrabold">জাতীয় জরুরি সেবা</h1>
+              <p class="text-gray-500">National Emergency</p>
+            </div>
+            <!-- Number & Category -->
+            <div class="mb-5">
+              <h1 class="text-3xl font-bold">999</h1>
+              <p class="w-fit text-gray-500 bg-[#ecfff0] px-7 py-3 rounded-4xl">
+                সার্বজনীন
+              </p>
+            </div>
+            <!-- Button -->
+            <div class="flex items-center justify-between gap-3">
+              <button
+                class="w-full border-1 border-gray-300 px-10 py-3 rounded-xl"
+              >
+                <i class="fa-regular fa-copy mr-3"></i>Copy
+              </button>
+              <button
+                class="w-full bg-[#00A63E] text-white px-10 py-3 rounded-xl"
+              >
+                <i class="fa-solid fa-phone mr-3"></i>Call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!---------- Call History Div ---------->
+        <div class="w-1/4 bg-white p-8 rounded-xl shadow-md">
+          <!-- call history header -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <i
+                class="fa-regular fa-clock text-2xl text-gray-500 font-extralight"
+              ></i>
+              <h1 class="text-2xl font-semibold">Call History</h1>
+            </div>
+            <button
+              class="bg-[#00A63E] text-white text-xl font-medium px-10 py-5 rounded-4xl"
+            >
+              Clear
+            </button>
+          </div>
+          <div
+            class="bg-[#f5fff6] flex items-center justify-between my-5 px-3 py-4 rounded-xl"
+          >
+            <div>
+              <p>জাতীয় জরুরি সেবা</p>
+              <p>999</p>
+            </div>
+            <div>
+              <p>11:36:58 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-------------- *** JavaScript Script File Linked *** ------------>
+    <script src="./main.js"></script>
+  </body>
 </html>
