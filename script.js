@@ -39,4 +39,13 @@ document.getElementById("btn-clear").addEventListener("click", () => {
   callHistoryDiv.innerHTML = "";
 });
 
-const favouriteBtn = document.getElementsByClassName("fav-btn");
+let heart = 0;
+const favouriteBtns = document.getElementsByClassName("fav-btn");
+const heartUi = document.getElementById("heart");
+
+for (const favouriteBtn of favouriteBtns) {
+  favouriteBtn.addEventListener("click", () => {
+    heart++;
+    heartUi.innerText = heart;
+  });
+}
