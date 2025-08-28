@@ -14,7 +14,7 @@ for (const callBtn of callBtns) {
     let currentCoin = Number(coin) - 20;
 
     if (currentCoin < 0) {
-      return alert("Don't Have Sufficient Coin!");
+      return alert("কল করার জন্য আপনার পর্যাপ্ত পরিমান কয়েন নেই।");
     } else {
       const callHistoryDiv = document.getElementById("history-list");
       const div = document.createElement("div");
@@ -29,7 +29,28 @@ for (const callBtn of callBtns) {
           </div>`;
       callHistoryDiv.appendChild(div);
       document.getElementById("coin").innerText = currentCoin;
+      return alert(`${title} এর ${number} এ কল করা হচ্ছে...`);
     }
+  });
+}
+
+/*-----------------> *** All Card Copy Button Code *** <---------------*/
+let copy = 0;
+const copyUi = document.getElementById("number-of-copy");
+
+const copyBtns = document.getElementsByClassName("btn-copy");
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", () => {
+    const hotLine =
+      copyBtn.parentNode.parentNode.children[2].children[0].textContent.replace(
+        /\D/g,
+        ""
+      );
+    navigator.clipboard.writeText(hotLine);
+
+    copy++;
+    copyUi.textContent = copy;
+    return alert(`${hotLine} নাম্বারটি কপি হয়েছে`);
   });
 }
 
