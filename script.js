@@ -18,13 +18,13 @@ for (const callBtn of callBtns) {
     } else {
       const callHistoryDiv = document.getElementById("history-list");
       const div = document.createElement("div");
-      div.innerHTML = `<div class="call-log bg-[#f5fff6] flex items-center justify-between my-5 px-3 py-4 rounded-xl">
+      div.innerHTML = `<div class="call-log bg-[#f5fff6] flex items-center justify-between my-5 p-4 rounded-xl">
             <div>
-              <p>${title}</p>
-              <p>${number}</p>
+              <p class="mb-1 text-sm font-medium md:text-xl md:font-semibold">${title}</p>
+              <p class="text-sm  text-gray-500 md:text-xl md:font-medium">${number}</p>
             </div>
             <div>
-              <p>${date}</p>
+              <p class="text-xs md:text-xl">${date}</p>
             </div>
           </div>`;
       callHistoryDiv.appendChild(div);
