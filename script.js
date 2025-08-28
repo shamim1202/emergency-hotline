@@ -39,6 +39,7 @@ document.getElementById("btn-clear").addEventListener("click", () => {
   callHistoryDiv.innerHTML = "";
 });
 
+/*---------------> Save Service As a Favourite <----------------- */
 let heart = 0;
 const favouriteBtns = document.getElementsByClassName("fav-btn");
 const heartUi = document.getElementById("heart");
