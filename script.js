@@ -14,7 +14,7 @@ for (const callBtn of callBtns) {
     let currentCoin = Number(coin) - 20;
 
     if (currentCoin < 0) {
-      return alert("কল করার জন্য আপনার পর্যাপ্ত পরিমান কয়েন নেই।");
+      return alert("\u274C কল করার জন্য আপনার পর্যাপ্ত পরিমান কয়েন নেই।");
     } else {
       const callHistoryDiv = document.getElementById("history-list");
       const div = document.createElement("div");
@@ -29,7 +29,9 @@ for (const callBtn of callBtns) {
           </div>`;
       callHistoryDiv.appendChild(div);
       document.getElementById("coin").innerText = currentCoin;
-      return alert(`${title} এর হটলাইন নম্বর ${number} এ কল করা হচ্ছে...`);
+      return alert(
+        `\uD83D\uDCDE ${title} এর হটলাইন নম্বর ${number} এ কল করা হচ্ছে...`
+      );
     }
   });
 }
@@ -37,7 +39,6 @@ for (const callBtn of callBtns) {
 /*-----------------> *** All Card Copy Button Code *** <---------------*/
 let copy = 0;
 const copyUi = document.getElementById("number-of-copy");
-
 const copyBtns = document.getElementsByClassName("btn-copy");
 for (const copyBtn of copyBtns) {
   copyBtn.addEventListener("click", () => {
@@ -52,7 +53,9 @@ for (const copyBtn of copyBtns) {
 
     copy++;
     copyUi.textContent = copy;
-    return alert(`${title} এর হটলাইন ${hotLine} নাম্বারটি কপি করা হয়েছে`);
+    return alert(
+      `\uD83D\uDCCB ${title} এর হটলাইন ${hotLine} নাম্বারটি কপি করা হয়েছে`
+    );
   });
 }
 
@@ -60,16 +63,17 @@ for (const copyBtn of copyBtns) {
 document.getElementById("btn-clear").addEventListener("click", () => {
   const callHistoryDiv = document.getElementById("history-list");
   callHistoryDiv.innerHTML = "";
+  return alert("\uD83E\uDDF9 কল লিস্ট থেকে সকল তথ্য মুছে ফেলা হয়েছে");
 });
 
-/*---------------> Save Service As a Favourite <----------------- */
+/*---------------> *** Save Service As a Favourite *** <--------------- */
 let heart = 0;
 const favouriteBtns = document.getElementsByClassName("fav-btn");
 const heartUi = document.getElementById("heart");
-
 for (const favouriteBtn of favouriteBtns) {
   favouriteBtn.addEventListener("click", () => {
     heart++;
     heartUi.innerText = heart;
+    return alert("\u2764\uFE0F সেবাটি আপনার পছন্দের তালিকায় যোগ করা হয়েছে");
   });
 }
