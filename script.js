@@ -29,7 +29,7 @@ for (const callBtn of callBtns) {
           </div>`;
       callHistoryDiv.appendChild(div);
       document.getElementById("coin").innerText = currentCoin;
-      return alert(`${title} এর ${number} এ কল করা হচ্ছে...`);
+      return alert(`${title} এর হটলাইন নম্বর ${number} এ কল করা হচ্ছে...`);
     }
   });
 }
@@ -41,6 +41,8 @@ const copyUi = document.getElementById("number-of-copy");
 const copyBtns = document.getElementsByClassName("btn-copy");
 for (const copyBtn of copyBtns) {
   copyBtn.addEventListener("click", () => {
+    const title =
+      copyBtn.parentNode.parentNode.children[1].children[0].innerText;
     const hotLine =
       copyBtn.parentNode.parentNode.children[2].children[0].textContent.replace(
         /\D/g,
@@ -50,7 +52,7 @@ for (const copyBtn of copyBtns) {
 
     copy++;
     copyUi.textContent = copy;
-    return alert(`${hotLine} নাম্বারটি কপি হয়েছে`);
+    return alert(`${title} এর হটলাইন ${hotLine} নাম্বারটি কপি করা হয়েছে`);
   });
 }
 
